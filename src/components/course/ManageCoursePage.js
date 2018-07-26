@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as courseActions from '../../actions/courseActions';
 import CourseForm from './CourseForm';
+import { browserHistory } from 'react-router';
 
 class ManageCoursePage extends React.Component {
   constructor(props, context) {
@@ -24,9 +25,14 @@ class ManageCoursePage extends React.Component {
     return this.setState({course: course});
   }
 
+  redirectToAddCoursesPage() {
+    browserHistory.push('/courses');
+  }
+
   saveCourse(event) {
     event.preventDefault();
     this.props.actions.saveCourse(this.state.course);
+    this.redirectToAddCoursesPage();
   }
 
   render() {
