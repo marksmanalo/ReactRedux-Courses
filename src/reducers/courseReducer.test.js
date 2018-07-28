@@ -1,5 +1,5 @@
 import expect from 'expect';
-import courseReducer from './courseReducer'
+import courseReducer from './courseReducer';
 import * as actions from '../actions/courseActions';
 
 describe('Course Reducer', () => {
@@ -29,7 +29,7 @@ describe('Course Reducer', () => {
     const initialState = [
       {id: 'A', title: 'A'},
       {id: 'B', title: 'B'},
-      {id: 'C', title: 'C'},
+      {id: 'C', title: 'C'}
     ];
 
     const course = {id: 'B', title: 'New Title'};
