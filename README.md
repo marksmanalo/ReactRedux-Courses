@@ -3,4 +3,5 @@ https://app.pluralsight.com/library/courses/react-redux-react-router-es6/table-o
 
 # To start
 npm install
+
 npm start
